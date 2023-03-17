@@ -209,8 +209,8 @@ In [TestSnapshot.java](src/test/java/example/project/domain/TestSnapshot.java), 
     {
         assertEquals(s1.roadType, s2.roadType);
         assertEquals(s1.weatherCondition, s2.weatherCondition);
-        assertEquals(s1.egoCarPos, s2.egoCarPos);
-        assertEquals(s1.carInFrontPos, s2.carInFrontPos);
+        assertTrue(Arrays.equals(s1.egoCarPos.toArray(), s2.egoCarPos.toArray()));
+        assertTrue(Arrays.equals(s1.carInFrontPos.toArray(), s2.carInFrontPos.toArray()));
     }
 ```
 
@@ -230,8 +230,8 @@ To keep the test case the same while updating the implementation details, we can
         Snapshot snapshot = (Snapshot) obj;
         return roadType.equals(snapshot.roadType)
                 && weatherCondition.equals(snapshot.weatherCondition)
-                && egoCarPos.equals(snapshot.egoCarPos)
-                && carInFrontPos.equals(snapshot.carInFrontPos);
+                && Arrays.equals(egoCarPos.toArray(), snapshot.egoCarPos.toArray())
+                && Arrays.equals(egoCarPos.toArray(), snapshot.egoCarPos.toArray());
     }
 ```
 Adding the above lines to [Snapshot.java](src/main/java/example/project/domain/Snapshot.java) will allow us to simplify the test case as follows:
