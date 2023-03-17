@@ -16,12 +16,12 @@ public class TestSnapshot {
         s1.roadType = "curve";
         s1.weatherCondition = "clean";
         s1.egoCarPos = Arrays.asList(0F, 0F);
-        s1.carInFrontPos = Arrays.asList(0.33333334F, 0.33333334F);
+        s1.carInFrontPos = Arrays.asList(0.5F, 0.5F);
 
         s2.roadType = "curve";
         s2.weatherCondition = "clean";
         s2.egoCarPos = Arrays.asList(0F, 0F);
-        s2.carInFrontPos = Arrays.asList(1/3F, 1/3F);
+        s2.carInFrontPos = Arrays.asList(0.5F, 0.5F);
     }
 
     @Test
