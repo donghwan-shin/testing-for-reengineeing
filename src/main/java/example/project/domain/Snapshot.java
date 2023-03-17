@@ -22,7 +22,7 @@ public class Snapshot {
         Snapshot snapshot = (Snapshot) obj;
         return roadType.equals(snapshot.roadType)
                 && weatherCondition.equals(snapshot.weatherCondition)
-                && Arrays.equals(egoCarPos.toArray(), snapshot.egoCarPos.toArray())
-                && Arrays.equals(egoCarPos.toArray(), snapshot.egoCarPos.toArray());
+                && egoCarPos.equals(snapshot.egoCarPos)
+                && carInFrontPos.equals(snapshot.carInFrontPos);
     }
 }

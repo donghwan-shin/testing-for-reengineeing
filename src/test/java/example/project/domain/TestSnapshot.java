@@ -30,8 +30,8 @@ public class TestSnapshot {
     {
         assertEquals(s1.roadType, s2.roadType);
         assertEquals(s1.weatherCondition, s2.weatherCondition);
-        assertTrue(Arrays.equals(s1.egoCarPos.toArray(), s2.egoCarPos.toArray()));
-        assertTrue(Arrays.equals(s1.carInFrontPos.toArray(), s2.carInFrontPos.toArray()));
+        assertEquals(s1.egoCarPos, s2.egoCarPos);
+        assertEquals(s1.carInFrontPos, s2.carInFrontPos);
     }
 
     @Test
