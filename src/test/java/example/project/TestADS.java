@@ -7,8 +7,6 @@ import static org.mockito.Mockito.*;
 import example.project.domain.Scenario;
 import org.junit.jupiter.api.Test;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
 import java.util.Arrays;
 import java.util.List;
 
@@ -19,25 +17,6 @@ public class TestADS {
         fail();
         // delete the above line and implement this properly to test if ads.printPath() prints the ADSPath.
         // hint: see testHelloWorld() in our previous lab session.
-    }
-
-    @Test
-    public void testPrintPathSolution() {
-        String path = "dummy-path";
-        ADS ads = new ADS(path);
-
-        PrintStream originalOut = System.out;
-        ByteArrayOutputStream bos = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(bos));
-
-        // action
-        ads.printPath();
-
-        // assertion
-        assertEquals(path, bos.toString().trim());
-
-        // undo the binding in System
-        System.setOut(originalOut);
     }
 
     @Test
