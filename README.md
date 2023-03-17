@@ -140,7 +140,7 @@ such as an ADS in this example, that are unavailable or difficult to get.
 Then should we just give up testing relevant code? No, we can use **mocks**!
 
 
-### Step 2: Use mocks in `testPredict()`
+### Step 2: Fix `testPredict()` using mocks
 
 Instead of using an incomplete/external ADS, we can use a mock as follows:
 ```java
