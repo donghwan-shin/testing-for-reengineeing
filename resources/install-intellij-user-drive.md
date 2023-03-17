@@ -15,7 +15,7 @@ It will take some time (~10 mins) to extract all the files.
 Then, you should be able to see a new folder `ideaIC-2022.3.3.win` under the shared drive.
 Inside, you will see `ideaIC-2022.3.3.win/bin/idea64.exe`. Executing this file will open IntelliJ 2022.3.
 
-![Git bash path setting](/images/intellij2022-bin.png)
+![Git bash path setting](/resources/intellij2022-bin.png)
 
 ### Tip: How to use git bash as a terminal in intelliJ
 
@@ -29,6 +29,6 @@ On the right panel, go to "Application Settings" -> "Shall path".
 
 Just update the Shall path to `C:\Program Files\Git\bin\bash.exe` and save the configuration.
 
-![Git bash path setting](/images/git-bash.png)
+![Git bash path setting](/resources/git-bash.png)
 
 If you close and re-open a new terminal, it will be GitBash.
