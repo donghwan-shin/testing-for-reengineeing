@@ -15,6 +15,12 @@ Since our aim is to learn "testing for reengineering", you can only modify test 
 You must *not* modify the source code under `src/main` to solve the problems below.
 The only exception is [Scenario.java](src/main/example/project/domain/Scenario.java) which should be modified in Part 3.
 
+By default, a CI/CD pipeline is set up to automatically check the following commands (i.e., the commands that must pass when you complete all the tasks below) when your commits are pushed to the main branch:
+- `mvn test -Dtest=TestSimulator#testRun2`
+- `mvn test -Dtest=TestADS#testPrintPath`
+- `mvn test -Dtest=TestChecker#testCheckCollisionViolations`
+- `mvn test -Dtest=TestScenario#testEquality`
+
 
 ## Part 0: Setup
 
