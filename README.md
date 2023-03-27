@@ -237,7 +237,7 @@ To keep the test case the same while updating the implementation details, we can
         return roadType.equals(snapshot.roadType)
                 && weatherCondition.equals(snapshot.weatherCondition)
                 && Arrays.equals(egoCarPos.toArray(), snapshot.egoCarPos.toArray())
-                && Arrays.equals(egoCarPos.toArray(), snapshot.egoCarPos.toArray());
+                && Arrays.equals(carInFrontPos.toArray(), snapshot.carInFrontPos.toArray());
     }
 ```
 Adding the above lines to [Snapshot.java](src/main/java/example/project/domain/Snapshot.java) will allow us to simplify the test case as follows:
